@@ -22,7 +22,9 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
     // Packages to Spoof as ROG Phone 6
     private static final String[] packagesToChangeROG6 = {
         "com.tencent.ig",
+        "com.miHoYo.GenshinImpact",
         "com.vng.pubgmobile",
+        "com.garena.game.kgvn"
         "com.miHoYo.GenshinImpact.vn",
         "com.activision.callofduty.shooter",
         "com.activision.callofudty.warzone",
@@ -38,7 +40,6 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         "com.garena.game.codm",
         "com.tencent.tmgp.kr.codm",
         "com.vng.codmvn",
-        "com.garena.game.kgvn"
     };
 
     // Packages to Spoof as OnePlus 8 Pro
@@ -58,7 +59,6 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         "com.ngame.allstar.eu",
         "com.mojang.minecraftpe",
         "com.YoStar.AetherGazer",
-        "com.miHoYo.GenshinImpact",
         "com.garena.game.lmjx"
     };
 
