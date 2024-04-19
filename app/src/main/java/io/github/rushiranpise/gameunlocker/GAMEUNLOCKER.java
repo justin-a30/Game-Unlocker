@@ -24,7 +24,7 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         "com.tencent.ig",
         "com.miHoYo.GenshinImpact",
         "com.vng.pubgmobile",
-        "com.garena.game.kgvn"
+        "com.garena.game.kgvn",
         "com.miHoYo.GenshinImpact.vn",
         "com.activision.callofduty.shooter",
         "com.activision.callofudty.warzone",
