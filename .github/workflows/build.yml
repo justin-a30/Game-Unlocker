@@ -49,7 +49,7 @@ jobs:
       uses: actions/create-release@v1
       with:
         files: game-unlocker-v${{ steps.version.outputs.app_version }}.apk
-        tag_name: ${{ steps.version.outputs.app_version }}
+        tag_name: bobert_builds
         release_name: ${{ steps.version.outputs.app_version }}
         prerelease: false
       env:
