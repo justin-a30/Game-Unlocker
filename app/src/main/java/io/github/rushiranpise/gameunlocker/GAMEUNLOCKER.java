@@ -21,6 +21,9 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
     private static final String TAG = GAMEUNLOCKER.class.getSimpleName();
     // Packages to Spoof as ROG Phone 6
     private static final String[] packagesToChangeROG6 = {
+        "com.tencent.ig",
+        "com.vng.pubgmobile",
+        "com.miHoYo.GenshinImpact.vn",
         "com.activision.callofduty.shooter",
         "com.activision.callofudty.warzone",
         "com.ea.gp.fifamobile",
@@ -50,9 +53,7 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         "com.riotgames.league.teamfighttactics",
         "com.riotgames.league.teamfighttacticstw",
         "com.riotgames.league.teamfighttacticsvn",
-        "com.tencent.ig",
         "com.tencent.tmgp.pubgmhd",
-        "com.vng.pubgmobile",
         "vng.games.revelation.mobile",
         "com.ngame.allstar.eu",
         "com.mojang.minecraftpe",
