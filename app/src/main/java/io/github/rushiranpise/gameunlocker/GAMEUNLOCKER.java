@@ -23,7 +23,6 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
     private static final String[] packagesToChangeROG6 = {
         "com.tencent.ig",
         "com.miHoYo.GenshinImpact",
-        "com.vng.pubgmobile",
         "com.garena.game.kgvn",
         "com.miHoYo.GenshinImpact.vn",
         "com.activision.callofduty.shooter",
@@ -33,6 +32,11 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         "com.madfingergames.legends",
         "com.pearlabyss.blackdesertm",
         "com.pearlabyss.blackdesertm.gl"
+    };
+
+    // Packages to Spoof as UNKOWN DEVICE
+    private static final String[] packagesToChangeUNK = {
+        "com.vng.pubgmobile",
     };
 
     // Packages to Spoof as Xperia 5
@@ -170,6 +174,15 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         setPropValue("MANUFACTURER", "asus");
         setPropValue("DEVICE", "AI2201");
         setPropValue("MODEL", "ASUS_AI2201");
+    }
+    
+    // Unknown brand
+    // Props to Spoof as an unknown device
+    private static void propsToChangeUNK() {
+        setPropValue("BRAND", "PJD110");
+        setPropValue("MANUFACTURER", "PJD110");
+        setPropValue("DEVICE", "PJD110");
+        setPropValue("MODEL", "PJD110");
     }
 
     // Blackshark
